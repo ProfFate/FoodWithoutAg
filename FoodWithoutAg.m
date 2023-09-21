@@ -7,7 +7,8 @@ function [Check] = FoodWithoutAg()
 clear
 
 %% Initialize Variables
-PrintFigs = 1;
+MakeFigs = 1;
+PrintFigs = 0;
 
 n = 1e2;
 
@@ -218,7 +219,7 @@ SynthLit = []; %col 1 is engy ems, col 2 is feedstock ems, col 3 is product type
     
 %% Figure 2 - Make contour plots of emissions/kcal
 
-if PrintFigs==1
+if MakeFigs==1
     
     figure
 
@@ -305,7 +306,7 @@ end %if Fig 2
 
 %% Figure 3 - Make cumulative plots of avoided emissions and spared land 
 
-if PrintFigs==1
+if MakeFigs==1
     
     figure
 
